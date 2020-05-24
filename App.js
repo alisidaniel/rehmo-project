@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Alert, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
+import {Alert, StyleSheet, Text, TouchableHighlight, View, TouchableOpacity} from 'react-native';
 import {LoginButton, ShareDialog} from 'react-native-fbsdk';
+import ImagePicker from 'react-native-image-crop-picker';
 
 const SHARE_LINK_CONTENT = {
   contentType: 'link',
@@ -8,6 +9,23 @@ const SHARE_LINK_CONTENT = {
 };
 
 export default class App extends Component<{}> {
+
+  constructor() {
+    super();
+    this.state = {
+      images: null,
+      userInfo: {}
+    };
+  }
+
+  pickMultiple() {
+    ImagePicker.openPicker({
+      multiple: true
+    }).then(images => {
+      console.log(images);
+    }).catch(e => alert(e));
+  }
+
   _shareLinkWithShareDialog = async () => {
     const canShow = await ShareDialog.canShow(SHARE_LINK_CONTENT);
     if (canShow) {
@@ -29,6 +47,11 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
+
+        <TouchableOpacity onPress={this.pickMultiple.bind(this)} style={{backgroundColor:'green',height:50,width:100,alignContent:'center'}}>
+          <Text style={{paddingTop:14}}>Choose photo</Text>
+        </TouchableOpacity>
+        
         <LoginButton
           onLoginFinished={(error, data) => {
             console.log('AAAA');

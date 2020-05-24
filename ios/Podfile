@@ -79,6 +79,8 @@ target 'rhApp' do
 
   pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
 
+  pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+
   target 'rhAppTests' do
     inherit! :complete
     # Pods for testing
