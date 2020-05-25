@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "472745786335",
+    "firebase_url": "https://rehmo-d2ab2.firebaseio.com",
+    "project_id": "rehmo-d2ab2",
+    "storage_bucket": "rehmo-d2ab2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472745786335:android:5b7d169b3e6c304824226a",
+        "android_client_info": {
+          "package_name": "com.rhapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472745786335-r42v91lp1qgf75n8jer3rklsbvkbo9kh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rhapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "472745786335-tp6kri3t681bf9a62rfe46cs7nei0l3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKAS5WKHizcvzTfy_6GQsW69uHMZMe3ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472745786335-tp6kri3t681bf9a62rfe46cs7nei0l3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

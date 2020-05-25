@@ -81,6 +81,8 @@ target 'rhApp' do
 
   pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
 
+  pod 'RNGoogleSignin', :path => '../node_modules/@react-native-community/google-signin'
+
   target 'rhAppTests' do
     inherit! :complete
     # Pods for testing
