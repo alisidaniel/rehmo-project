@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button, View, Text } from 'react-native';
 
-export default class Profile extends React.Component{
+export default class Loading extends React.Component{
     render(){
         return(
             <View>
-                <Text>Profile</Text>
+                <Text>Loading</Text>
             </View>
         )
     }

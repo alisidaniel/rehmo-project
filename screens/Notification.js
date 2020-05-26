@@ -1,12 +1,12 @@
 import React from 'react';
 import { Button, View, Text } from 'react-native';
 
-export default class Profile extends React.Component{
+export default class Notification extends React.Component{
     render(){
         return(
             <View>
-                <Text>Profile</Text>
+                <Text>Notification page</Text>
             </View>
-        )
+        );
     }
 }
