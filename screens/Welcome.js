@@ -1,7 +1,7 @@
 import React from 'react';
-import {Text, Button, View} from 'react-native';
+import { Button, View, Text } from 'react-native';
 
-class Register extends React.Component{
+export default class Welcome extends React.Component{
     constructor(props){
         super(props);
         this.state = {
@@ -12,10 +12,9 @@ class Register extends React.Component{
         const { navigate } = this.props.navigation;
         return(
             <View style={{ flex: 1, justifyContent: 'center',  alignItems: 'center' }}>
-                <Text>Register </Text>
+                <Text>Welcome page</Text>
+                <Button onPress={() => {navigate("Login")}} title="Countinue as agent"/>
             </View>
-        );
+        )
     }
 }
-
-export default Register;

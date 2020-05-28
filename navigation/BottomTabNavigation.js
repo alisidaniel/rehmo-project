@@ -13,11 +13,11 @@ export default class BottomTabNavigation extends Component{
             screenOptions={({ route }) => ({
               tabBarIcon: ({ focused, color, size }) => {
              let iconName;
-             if (route.name === 'TabA') {
+             if (route.name === 'Home') {
                 iconName = focused
                 ? 'ios-information-circle'
                 : 'ios-information-circle-outline';
-              } else if (route.name === 'TabB') {
+              } else if (route.name === 'Search') {
                 iconName = focused
                 ? 'ios-list-box'
                 : 'ios-list';
@@ -29,9 +29,9 @@ export default class BottomTabNavigation extends Component{
               activeTintColor: 'tomato',
               inactiveTintColor: 'gray',
               }}
-            >
-                <Tab.Screen name="TabA" component={StackNavigation} />
-                <Tab.Screen name="TabB" component={Profile} />
+            >   
+                <Tab.Screen name="Home" component={StackNavigation} />
+                <Tab.Screen name="Search" component={Profile} />
             </Tab.Navigator>
         );
     }

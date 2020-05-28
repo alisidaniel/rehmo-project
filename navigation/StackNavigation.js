@@ -10,9 +10,9 @@ export default class StackNavigation extends React.Component{
     render(){
         return(
             <Stack.Navigator>
-                <Stack.Screen name="home" component={Home} />
+                <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="notification" component={Notification} />
-                <Stack.Screen name="Detail page" component={DetailView} />
+                <Stack.Screen name="Detail" component={DetailView} />
             </Stack.Navigator>
         );
     }

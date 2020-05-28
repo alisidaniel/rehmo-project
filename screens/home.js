@@ -1,13 +1,21 @@
 import React from 'react';
 import { Button, View, Text } from 'react-native';
+import {AuthContext} from '../context';
 
-export default class Home extends React.Component{
-    render(){
-        return(
-            <View>
-                <Text>Home</Text>
-                   {/* <Button onPress={() => navigation.navigate('Detail page')} title="Go to TabA Details"/> */}
-            </View>
-        );
-    }
+const Home = ({navigation}) => {
+
+ const {signOut} = React.useContext(AuthContext);
+    
+ 
+    return(
+        <View style={{ flex: 1, justifyContent: 'center',  alignItems: 'center' }}>
+            <Text>Home</Text>
+            <Button onPress={() => navigation.push("Detail")} title="Details"/>
+            <Text>OR</Text>
+            <Button onPress={() => signOut()} title="Logout"/>
+        </View>
+    );
+    
 }
+
+export default Home;
