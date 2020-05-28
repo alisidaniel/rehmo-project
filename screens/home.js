@@ -12,6 +12,7 @@ const Home = ({navigation}) => {
             <Text>Home</Text>
             <Button onPress={() => navigation.push("Detail")} title="Details"/>
             <Text>OR</Text>
+            
             <Button onPress={() => signOut()} title="Logout"/>
         </View>
     );
