@@ -2,14 +2,14 @@
     # rehmo-project
     
     
-    Welcome to rehmo 
+Welcome to rehmo we build with Love
     
-    # frontend stacks
+Frontend stacks
     
-     1 . React Native
+   1 . React Native
      
-    # Backend api
+ Backend Stack
     
-     2. Python Django Rest API
+  2. Python Django Rest API
     
     
